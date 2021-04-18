@@ -138,13 +138,18 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.8)
     connection_pool (2.2.3)
     copyright-header (1.0.15)
       github-linguist (~> 2.6)
     crass (1.0.6)
     daemons (1.2.3)
     debug_inspector (0.0.3)
+    delayed_job (4.1.9)
+      activesupport (>= 3.0, < 6.2)
+    delayed_job_active_record (4.1.6)
+      activerecord (>= 3.0, < 6.2)
+      delayed_job (>= 3.0, < 5)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     devise (4.7.1)
@@ -197,7 +202,7 @@ GEM
       multi_json
     enumerable-lazy (0.0.2)
     equalizer (0.0.11)
-    erubi (1.9.0)
+    erubi (1.10.0)
     erubis (2.7.0)
     escape_utils (1.0.1)
     exception_notification (4.4.0)
@@ -308,7 +313,7 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.5.0)
+    loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -319,8 +324,8 @@ GEM
     mime-types (1.25.1)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
-    mini_portile2 (2.4.0)
-    minitest (5.14.1)
+    mini_portile2 (2.5.0)
+    minitest (5.14.4)
     momentjs-rails (2.11.1)
       railties (>= 3.1)
     money (6.5.1)
@@ -335,15 +340,16 @@ GEM
       mustermann (>= 1.0.0)
     mustermann19 (0.4.4)
       enumerable-lazy
-    mysql2 (0.4.4)
+    mysql2 (0.5.3)
     nested_form (0.3.2)
     net-scp (3.0.0)
       net-ssh (>= 2.6.5, < 7.0.0)
     net-ssh (6.1.0)
     netrc (0.11.0)
     nio4r (2.5.2)
-    nokogiri (1.10.9)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.11.3)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     oauth (0.4.7)
     oauth2 (1.4.3)
       faraday (>= 0.8, < 2.0)
@@ -391,7 +397,8 @@ GEM
       roxml (= 4.0.0)
     rabl (0.14.3)
       activesupport (>= 2.3.14)
-    rack (2.2.2)
+    racc (1.5.2)
+    rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cors (1.1.1)
@@ -483,7 +490,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    semantic_range (2.3.0)
+    semantic_range (3.0.0)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
       shoulda-matchers (>= 1.4.1, < 3.0)
@@ -541,7 +548,7 @@ GEM
       actionpack (>= 3.1)
       execjs
       railties (>= 3.1)
-    tzinfo (1.2.7)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
@@ -561,7 +568,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    webpacker (5.1.1)
+    webpacker (5.2.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -581,7 +588,7 @@ GEM
       unix_utils
     xml-simple (1.1.5)
     yajl-ruby (1.3.1)
-    zeitwerk (2.3.0)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
@@ -610,6 +617,7 @@ DEPENDENCIES
   coffee-rails (= 5.0.0)
   copyright-header (= 1.0.15)
   daemons (= 1.2.3)
+  delayed_job_active_record (~> 4.1, >= 4.1.1)
   devise
   devise-encryptable (= 0.2.0)
   elasticsearch-model (= 5.0.0)
@@ -638,7 +646,7 @@ DEPENDENCIES
   listen
   momentjs-rails (= 2.11.1)
   money (~> 6.5.0)
-  mysql2 (= 0.4.4)
+  mysql2 (= 0.5.3)
   nested_form (= 0.3.2)
   nokogiri
   oauth (= 0.4.7)

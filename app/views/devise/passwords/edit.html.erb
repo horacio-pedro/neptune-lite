@@ -1,9 +1,11 @@
 <section id="login-section">
   <div class="container">
     <div class="login-container">
-      <span class="side-nav"></span>
-      <a class="logo" href="#">Open<span>Source</span>Billing</a>
-      <h2>Change password</h2>
+      <%# <span class="side-nav"></span> %>
+      <a class="logo" href="#">
+        <%= image_tag "logo.png", :size => "260x69" %>
+      </a>
+      <h2>Alterar password</h2>
 
       <div stlye="color: red"><%= devise_error_messages! %></div>
 

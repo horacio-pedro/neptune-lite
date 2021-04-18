@@ -1,8 +1,8 @@
 
-OpenSourceBilling
+Neptune - Lite
 ===================
 
-[OpenSourceBilling](http://opensourcebilling.org/) is a simple web application to create and send invoices, receive payments, manage clients and companies. It generates reports of Item sales, payments, and collected revenues. It supports multi languages and multi currencies. This application is developed in Ruby on Rails v6.0.2.2. and Ruby v2.7.1. This document describes OSB application setup on Ubuntu 14.04 LTS machine.
+[neptune](http://neptune.ao/) is a simple web application to create and send invoices, receive payments, manage clients and companies. It generates reports of Item sales, payments, and collected revenues. It supports multi languages and multi currencies. This application is developed in Ruby on Rails v6.0.2.2. and Ruby v2.7.1. This document describes Neptune application setup on Ubuntu 14.04 LTS machine.
 
 Features
 ---------
@@ -27,7 +27,7 @@ Features
 * Reports like `Payments Collected`, `Aged Accounts Receivable`, `Revenue By Client`, `Items Sales` and more to come
 * Customer portal
 
-Try [Demo](http://demo.opensourcebilling.org) here
+Try [Demo](http://demo.neptune.ao) here
 
 Caveats
 -------
@@ -79,12 +79,12 @@ Bundler is a tool that allows you to install multiple gem versions, run this com
 #### 3.1 Clone Application Code
 To clone project code from GitHub, give your GitHub account credential for authentication while cloning project.
     
-    git clone https://github.com/vteams/open-source-billing
+    git clone https://github.com/conexoesinfinito/neptune
 
 
 #### 3.2 Navigate to Project Directory
 
-    cd open-source-billing
+    cd neptune
 
 #### 3.3 Installing Gems
 
@@ -106,7 +106,7 @@ Edit config/config.yml with your own paypal settings:
 #### 3.6 Configuration Application host and protocol
 Edit config/config.yml with your own application settings:
 
-    app_host: APP_HOST_HERE # e.g. osb.mydomain.com
+    app_host: APP_HOST_HERE # e.g. neptune.mydomain.com
     app_protocol: http
 
 #### 3.7 PDF configuration
@@ -154,7 +154,7 @@ Loading default values in database
 
 ### Step-4. Run
 #### 4.1 Background Services
-You need to start delayed_job for email delivery and other background tasks required for properly functionality of OSB by using following command
+You need to start delayed_job for email delivery and other background tasks required for properly functionality of Neptune-lite by using following command
 
     RAILS_ENV=development  bin/delayed_job start
 
@@ -167,12 +167,12 @@ and use your application in browser by typing in url: localhost:3000
 
 #### 4.2 Production Environment
 
-You can also configure Apache, Nginx or any other web/application server of your choice to execute OSB in production mode.
+You can also configure Apache, Nginx or any other web/application server of your choice to execute Neptune-lite in production mode.
 
 Login credentials
 ------------
 
-Once you successfully configured OSB, you can use the below credentials to login.
+Once you successfully configured Neptune-lite, you can use the below credentials to login.
 
     Email: admin@opensourcebilling.org
     password: opensourcebilling
@@ -182,22 +182,4 @@ You can immediately change the credentials once you successfully logged in.
 Customer Portal
 ------------
 
-When a customer receive invoice/estimate through email, he will also receive a login link to see all of his invoices. By visiting that url he can login to his account or can create his account if he don't have one.  
-
-Contributing
-------------
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-awesome-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-awesome-feature`)
-5. Create new Pull Request
-
-Contact Information
--------------------
-Mia Mian
-+1 (858) 586 7777
-
-E-mail: <mia@presstigers.com> | <fahad@presstigers.com> | <support@opensourcebilling.org>
-
-Homepage: <http://www.opensourcebilling.org/>
+When a customer receive invoice/estimate through email, he will also receive a login link to see all of his invoices. By visiting that url he can login to his account or can create his account if he don't have one.
