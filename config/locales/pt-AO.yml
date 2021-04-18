@@ -1,6 +1,3 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# This file contains Portuguese translation
-
 pt-AO:
   currency_unit: "Kz"
   currency_code: "AOA"
@@ -26,6 +23,44 @@ pt-AO:
   task: "Tarefa"
   tax: "Imposto"
   staff: "Funcionários"
+  grape:
+    errors:
+      format: ! '%{attributes} %{message}'
+      messages:
+        coerce: 'is invalid'
+        required: 'is required'
+      attributes:
+        invoice[invoice_date]: 'Invoice date'
+        invoice[client_id]: 'Client'
+        invoice[due_date]: 'Due date'
+        invoice[company_id]: 'Company'
+        invoice[invoice_line_items_attributes][item_name]: 'Item name'
+        invoice[invoice_line_items_attributes][item_description]: 'Item description'
+        invoice[invoice_line_items_attributes][item_unit_cost]: 'Item unit cost'
+        invoice[invoice_line_items_attributes][item_quantity]: 'Item quantity'
+        invoice[recurring_schedule_attributes][frequency]: 'Recurring frequency'
+        invoice[recurring_schedule_attributes][occurrences]: 'Recurring occurrences'
+        invoice[recurring_schedule_attributes][delivery_option]: 'Enable recurring'
+        client[email]: 'Email'
+        client[organization_name]: 'Organization name'
+        client[first_name]: 'First name'
+        client[last_name]: 'Last name'
+        item[item_name]: 'Item name'
+        item[item_description]: 'Item description'
+        item[unit_cost]: 'Unit cost'
+        item[quantity]: 'Quantity'
+        payment[invoice_id]: 'Invoice'
+        payment[payment_amount]: 'Payment amount'
+        company[account_id]: 'Account'
+        company[company_name]: 'Company name'
+        company[contact_name]: 'Contact name'
+        company[contact_title]: 'Contact title'
+        company[email]: 'Company email'
+        tax[name]: 'Tax name'
+        tax[percentage]: 'Tax percentage'
+        current_password: 'Current password'
+        password: 'Password'
+        password_confirmation: 'password confirmation'
 
   date:
     formats:
@@ -220,7 +255,7 @@ pt-AO:
       admin_email: "Email do Administrador"
       admin_billing_rate_per_hour: "Taxa de faturamento por hora do Administrador"
       admin_username: "Nome de usuário do Administrador"
-      admin_password: "Senha do Administrador"
+      admin_password: "Palavra-passe do Administrador"
 
     dashboard:
       ytd_income: "YTD Income"
@@ -431,8 +466,8 @@ pt-AO:
 
     staffs:
       name: "Nome da equipe"
-      password: "senha"
-      password_confirmation: "Confirme a Senha"
+      password: "palavra-passe"
+      password_confirmation: "Confirme a Palavra-passe"
       empty_listing: "Nenhum membro da equipe adicionado ainda!"
       make_this_staff_available_to: "Disponibilize esta equipe para"
       duplicate_name: "A equipe com o mesmo email já existe."
@@ -700,10 +735,10 @@ pt-AO:
       updated_msg: "As configurações são atualizadas com sucesso."
       currency_updated_msg_html: "Moeda foi atualizada para <strong>%{unit}</strong> com sucesso."
       listing_format: "Formato de Listagem"
-      card: "Cartão"
-      table: "Mesa"
-      card_view: "Vista de cartão"
-      table_view: "Vista de mesa"
+      card: "Grade"
+      table: "Lista"
+      card_view: "Vista em grade"
+      table_view: "Vista em lista"
       api_key: "Chave API"
       api_key_help_text: "Essa chave será usada para solicitações de APIs JSON"
 
@@ -734,6 +769,12 @@ pt-AO:
       email_invalid: "O email é inválido."
       changes_discarded_msg: "Suas alterações serão descartadas por meio da troca de empresa. Tem certeza de que deseja mudar de empresa?"
 
+    Roles:
+      roles: "Papéis"
+      client_roles: "Papel do Cliente"
+      name: "Nome do Papel"
+      deleted_msg: "Papel excluido com sucesso."
+
     email_templates:
       email_templates: "Templates para Emails"
       new: "Novo Template para Email"
@@ -757,7 +798,7 @@ pt-AO:
       users: "Utilizadores"
       new: "Novo Usuário"
       full_name: "Nome completo"
-      password: "Senha"
+      password: "Palavra-passe"
       confirmation: "Confirmação"
       notify_user: "Notificar usuário"
       avatar: "Avatar"
@@ -766,7 +807,7 @@ pt-AO:
       manager: "Gerente"
       staff: "Funcionários"
       assign_role: "Atribuir Papel"
-      updated_password_msg: "A senha foi atualizada com sucesso."
+      updated_password_msg: "A palavra-passe foi atualizada com sucesso."
       saved_msg: "Usuário foi salvo com sucesso."
       duplicate_email: "Usuário com o mesmo email já existe."
       unable_to_save: "Falha ao salvar o usuário. Certifique-se de ter inserido o registro correto."
@@ -775,7 +816,7 @@ pt-AO:
       full_name_required: "Nome completo é obrigatório."
       email_required: "E-mail é obrigatório."
       email_invalid: "Email inválido."
-      password_required: "Senha requerida."
+      password_required: "Palavra-passe requerida."
       pass_must_have_8_char: "O comprimento da senha deve ser maior ou igual a 8."
       pass_confirmation_required: "Confirmação de senha é necessária."
       pass_and_confirm_pass_should_same: "Senha e confirmação devem ser combinadas."
@@ -855,7 +896,7 @@ pt-AO:
     sessions:
       sign_in: "Bem-vindo"
       keep_me_signed_in: "Mantenha-me logado"
-      forgot_password: "Esqueceu a password?"
+      forgot_password: "Esqueceu a palavra-passe?"
       submit: "Entrar"
       powered_by: "distribuído por"
       sign_up: "Inscrever-se"

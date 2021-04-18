@@ -1,5 +1,10 @@
 /** Importing all the sass files **/
 /*----all Mixins---*/
+a {
+  color: #5629B6;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
 a:focus {
   outline: none !important; }
 a:visited {
@@ -4142,7 +4147,7 @@ h6 {
   top: 0;
   width: 0;
   height: 0;
-  border-right: 30px solid #2ec3e6;
+  border-right: 30px solid #6D29B6;
   border-top: 30px solid #f4f4f4; }
 #login-section.sign-up .login-container {
   background: #fff;
@@ -4968,7 +4973,7 @@ html {
   height: 28px;
 }
 i.material-icons.close:hover {
-  color: red;
+  color: #ccc;
 }
 
 .pagination {
