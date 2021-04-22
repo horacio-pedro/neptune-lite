@@ -37,7 +37,7 @@ class window.Dashboard
           {
             name: I18n.t("views.invoices.invoice")
             data: invoices
-            color: '#00BDE5'
+            color: '#5629B6'
           }
           {
             name: I18n.t("views.invoices.paid_invoices")

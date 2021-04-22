@@ -1,11 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M6,1H16a2,2,0,0,1,2,2V19a2,2,0,0,1-2,2H6a2,2,0,0,1-2-2V3A2,2,0,0,1,6,1M6,3V7H16V3H6M6,9v2H8V9H6m4,0v2h2V9H10m4,0v2h2V9H14M6,13v2H8V13H6m4,0v2h2V13H10m4,0v2h2V13H14M6,17v2H8V17H6m4,0v2h2V17H10m4,0v2h2V17H14Z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0,0,22,22">
+	<desc>work icon - Licensed under Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) - Created with Iconfu.com - Derivative work of Material icons (Copyright Google Inc.)</desc>
+	<defs>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-4dMn6y9K">
+			<stop offset="0" stop-color="#6f43cf"/>
+			<stop offset="1" stop-color="#3c109c"/>
+		</linearGradient>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-FAKuKbo7">
+			<stop offset="0" stop-color="#160076"/>
+			<stop offset="1" stop-color="#00001d"/>
+		</linearGradient>
+		<linearGradient x1="7.57" y1="8.77" x2="33.47" y2="34.66" id="color-V7FQB0hW" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="0.48" stop-color="#000000"/>
+		</linearGradient>
+		<mask id="mask-kSOghrKd">
+			<rect fill="url(#color-V7FQB0hW)" x="5.39" y="5.69" width="16.57" height="16.31"/>
+		</mask>
+	</defs>
+	<g fill="none" fill-rule="nonzero" style="mix-blend-mode: normal">
+		<path d="M17.11,21.71c-4.07,0.38 -8.16,0.38 -12.22,0c-2.44,-0.23 -4.37,-2.16 -4.6,-4.6c-0.38,-4.07 -0.38,-8.16 0,-12.22c0.23,-2.44 2.16,-4.37 4.6,-4.6c4.07,-0.38 8.16,-0.38 12.22,0c2.44,0.23 4.37,2.16 4.6,4.6c0.38,4.07 0.38,8.16 0,12.22c-0.23,2.44 -2.16,4.37 -4.6,4.6z" fill="url(#color-4dMn6y9K)"/>
+		<g fill="url(#color-FAKuKbo7)">
+			<path d="M9.81,7.72v-1.19h2.38l4.77,4.77v0l-3.57,-3.57v-1.19c0,-0.33 -0.13,-0.63 -0.35,-0.84l3.92,3.92v-0.7c0,-0.33 -0.13,-0.63 -0.35,-0.84l5.34,5.34c-0.05,1.23 -0.13,2.47 -0.24,3.7c-0.23,2.44 -2.16,4.37 -4.6,4.6c-2.01,0.19 -4.02,0.28 -6.03,0.29l-5.69,-5.69c0.22,0.22 0.51,0.35 0.84,0.35h9.53c0.66,0 1.19,-0.53 1.19,-1.19v-0.6z" mask="url(#mask-kSOghrKd)"/>
+		</g>
+		<path d="M16.96,8.91v6.55c0,0.66 -0.53,1.19 -1.19,1.19h-9.53c-0.66,0 -1.19,-0.53 -1.19,-1.19l0.01,-6.55c0,-0.66 0.52,-1.19 1.19,-1.19h2.38v-1.19c0,-0.66 0.53,-1.19 1.19,-1.19h2.38c0.66,0 1.19,0.53 1.19,1.19v1.19h2.38c0.66,0 1.19,0.53 1.19,1.19zM12.19,6.53h-2.38v1.19h2.38z" fill="#ffffff"/>
+	</g>
 </svg>

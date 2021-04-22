@@ -1,11 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M13,1H5A2,2,0,0,0,3.01,3L3,19a2,2,0,0,0,1.99,2H17a2.006,2.006,0,0,0,2-2V7Zm2,16H7V15h8v2Zm0-4H7V11h8v2ZM12,8V2.5L17.5,8H12Z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0,0,22,22">
+	<desc>airplay icon - Licensed under Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) - Created with Iconfu.com - Derivative work of Material icons (Copyright Google Inc.)</desc>
+	<defs>
+		<linearGradient x1="6.53" y1="5.64" x2="33.91" y2="33.02" id="color-CsPr3nMA" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="0.48" stop-color="#000000"/>
+		</linearGradient>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-jQKfuqiK">
+			<stop offset="0" stop-color="#160076"/>
+			<stop offset="1" stop-color="#00001d"/>
+		</linearGradient>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-vWqFOwgp">
+			<stop offset="0" stop-color="#6f43cf"/>
+			<stop offset="1" stop-color="#3c109c"/>
+		</linearGradient>
+		<mask id="mask-WqAfi6NI">
+			<rect fill="url(#color-CsPr3nMA)" x="4.8" y="5.69" width="17.2" height="16.3"/>
+		</mask>
+	</defs>
+	<g fill="none" fill-rule="nonzero" style="mix-blend-mode: normal">
+		<path d="M17.11,21.71c-4.07,0.38 -8.16,0.38 -12.22,0c-2.44,-0.23 -4.37,-2.16 -4.6,-4.6c-0.38,-4.07 -0.38,-8.16 0,-12.22c0.23,-2.44 2.16,-4.37 4.6,-4.6c4.07,-0.38 8.16,-0.38 12.22,0c2.44,0.23 4.37,2.16 4.6,4.6c0.38,4.07 0.38,8.16 0,12.22c-0.23,2.44 -2.16,4.37 -4.6,4.6z" fill="url(#color-vWqFOwgp)"/>
+		<g fill="url(#color-jQKfuqiK)">
+			<path d="M4.8,14.52c0.22,0.22 0.51,0.35 0.84,0.35h1.19l-1.19,-1.19v-7.15h10.73l1.19,1.19v-1.19c0,-0.33 -0.13,-0.63 -0.35,-0.84l4.79,4.79c0.02,2.21 -0.08,4.42 -0.28,6.63c-0.23,2.44 -2.16,4.37 -4.6,4.6c-1.61,0.15 -3.23,0.24 -4.85,0.27z" mask="url(#mask-WqAfi6NI)"/>
+		</g>
+		<path d="M17.55,6.53v7.15c0,0.66 -0.54,1.19 -1.19,1.19h-2.38v-1.19h2.38v-7.15h-10.73v7.15h2.38v1.19h-2.38c-0.66,0 -1.19,-0.54 -1.19,-1.19v-7.15c0,-0.66 0.54,-1.19 1.19,-1.19h10.73c0.66,0 1.19,0.54 1.19,1.19zM11,13.09l3.57,3.57h-7.15z" fill="#ffffff"/>
+	</g>
 </svg>

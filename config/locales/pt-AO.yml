@@ -1,5 +1,5 @@
 pt-AO:
-  currency_unit: "Kz"
+  currency_unit: "$"
   currency_code: "AOA"
 
   company: "Empresa"
@@ -19,7 +19,7 @@ pt-AO:
   edit: "Editar"
   estimate: "Orçamento"
   email_template: "Modelo de email"
-  user: "Do utilizador"
+  user: "utilizador"
   task: "Tarefa"
   tax: "Imposto"
   staff: "Funcionários"
@@ -258,7 +258,7 @@ pt-AO:
       admin_password: "Palavra-passe do Administrador"
 
     dashboard:
-      ytd_income: "YTD Income"
+      ytd_income: "Renda acumulada no ano"
       ytd_income_detail: "Quantia total recebida contra faturamento enviados durante este ano"
       amount_billed: "Quantia faturada"
       amount_billed_detail: "Soma do faturamento total enviados para clientes até agora"
@@ -306,7 +306,7 @@ pt-AO:
       line_total: "Line Total"
       invoice_number: "Fatura #"
       invoice_amount: "Quantia da fatura"
-      invoice_status: "Status da fatura"
+      invoice_status: "Estado da fatura"
       date_to_use: "Data a usar"
       amount_paid: "Quantia paga"
       amount_due: "Quantia em dívida"
@@ -398,7 +398,7 @@ pt-AO:
       due_date_range: "Prazo de vencimento"
       all_clients: "Todos os clientes"
       all_types: "Todos os tipos"
-      all_statuses: "Todos os status"
+      all_statuses: "Todos os estados"
       invoice_number_range: "Faixa de números da fatura"
       min: "Minuto"
       max: "Max"
@@ -780,7 +780,7 @@ pt-AO:
       new: "Novo Template para Email"
       template_type: "Tipo de template"
       subject: "Assunto"
-      status: "Status"
+      status: "Estados"
       days_of_due_date: "Dias para data de vencimento"
       email_from: "Email para"
       cc: "CC"

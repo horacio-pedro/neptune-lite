@@ -20,7 +20,7 @@
       <%= render 'sub_users_container'%>
     </div>
     <div style="" class="right">
-      <%= link_to ' + New User ', new_sub_user_path, remote: true, class: "#{(@sub_users.count > 0 && @sub_users.count <= 9) || @sub_users.count == 0 ? "secondary_new_link" : 'primary_new_link'}"  %>
+      <%= link_to ' + Novo Utilizador ', new_sub_user_path, remote: true, class: "#{(@sub_users.count > 0 && @sub_users.count <= 9) || @sub_users.count == 0 ? "secondary_new_link" : 'primary_new_link'}"  %>
     </div>
   </div>
 </div>

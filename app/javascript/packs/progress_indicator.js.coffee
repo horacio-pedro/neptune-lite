@@ -5,7 +5,7 @@ square = new Sonic(
   stepsPerFrame: 1
   trailLength: 1
   pointDistance: 0.05
-  strokeColor: "#00BDE5"
+  strokeColor: "#5629B6"
   fps: 20
   setup: ->
     @_.lineWidth = 4

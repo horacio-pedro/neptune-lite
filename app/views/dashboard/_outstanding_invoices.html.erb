@@ -1,12 +1,12 @@
 <div class="overview_box_heading">
-  <h1>Outstanding Invoices <span>(USD)</span></h1>
+  <h1>Faturas pendentes <span>(AOA)</span></h1>
 </div>
 <div class="graff_description">
   <div class="graff_value">
     <div class="graff_digit">
       <ul>
         <li class="digit_content"><%= number_to_currency(@outstanding_invoices) %></li>
-        <li class="digit_description">Total Outstanding <span>(USD)</span></li>
+        <li class="digit_description">Total Pendente <span>(AOA)</span></li>
       </ul>
     </div>
   </div><!--graff_value-->
@@ -14,23 +14,23 @@
     <table cellspacing="0" cellpadding="0">
       <tbody>
         <tr>
-          <td>0 - 30 days old<span>:</span></td>
+          <td>0 - 30 dias<span>:</span></td>
           <td><%= number_to_currency(@aged_invoices.attributes["zero_to_thirty"]) %></td>
         </tr>
         <tr>
-          <td>30 - 60 days old<span>:</span></td>
+          <td>30 - 60 dias<span>:</span></td>
           <td><%= number_to_currency(@aged_invoices.attributes["thirty_one_to_sixty"]) %></td>
         </tr>
         <tr>
-          <td>60 - 90 days old<span>:</span></td>
+          <td>60 - 90 dias<span>:</span></td>
           <td><%= number_to_currency(@aged_invoices.attributes["sixty_one_to_ninety"]) %></td>
         </tr>
         <tr>
-          <td>Over 90 days old<span>:</span></td>
+          <td>Mais de 90 dias<span>:</span></td>
           <td><%= number_to_currency(@aged_invoices.attributes["ninety_one_and_above"]) %></td>
         </tr>
       </tbody>
     </table>
-    <a href="/reports/aged_accounts_receivable">Account Aging Report</a>
+    <a href="/reports/aged_accounts_receivable">Relatório de envelhecimento da conta</a>
   </div><!--graff_detail-->
 </div><!--graff_description-->

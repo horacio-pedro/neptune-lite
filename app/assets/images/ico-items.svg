@@ -1,11 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M20,15.5a0.991,0.991,0,0,1-.53.88l-7.9,4.44a0.992,0.992,0,0,1-1.14,0l-7.9-4.44A0.991,0.991,0,0,1,2,15.5v-9a0.991,0.991,0,0,1,.53-0.88l7.9-4.44a0.992,0.992,0,0,1,1.14,0l7.9,4.44A0.991,0.991,0,0,1,20,6.5v9M11,3.15L5.04,6.5,11,9.85,16.96,6.5Z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0,0,22,22">
+	<desc>local_grocery_store icon - Licensed under Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) - Created with Iconfu.com - Derivative work of Material icons (Copyright Google Inc.)</desc>
+	<defs>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-iMik20VK">
+			<stop offset="0" stop-color="#160076"/>
+			<stop offset="1" stop-color="#00001d"/>
+		</linearGradient>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-rBrAK2UR">
+			<stop offset="0" stop-color="#6f43cf"/>
+			<stop offset="1" stop-color="#3c109c"/>
+		</linearGradient>
+		<linearGradient x1="5.43" y1="5.25" x2="33.4" y2="33.23" id="color-x45kT3CZ" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="0.48" stop-color="#000000"/>
+		</linearGradient>
+		<mask id="mask-DxjPUE3g">
+			<rect fill="url(#color-x45kT3CZ)" x="4.45" y="5.04" width="17.54" height="16.94"/>
+		</mask>
+	</defs>
+	<g fill="none" fill-rule="nonzero" style="mix-blend-mode: normal">
+		<path d="M17.11,21.71c-4.07,0.38 -8.16,0.38 -12.22,0c-2.44,-0.23 -4.37,-2.16 -4.6,-4.6c-0.38,-4.07 -0.38,-8.16 0,-12.22c0.23,-2.44 2.16,-4.37 4.6,-4.6c4.07,-0.38 8.16,-0.38 12.22,0c2.44,0.23 4.37,2.16 4.6,4.6c0.38,4.07 0.38,8.16 0,12.22c-0.23,2.44 -2.16,4.37 -4.6,4.6z" fill="url(#color-rBrAK2UR)"/>
+		<g fill="url(#color-iMik20VK)">
+			<path d="M7.19,16.61c0.21,0.21 0.51,0.35 0.84,0.35c0.66,0 1.19,-0.54 1.19,-1.19c0,-0.04 0,-0.07 -0.01,-0.11l-2.03,-2.03c0.22,0.22 0.51,0.35 0.84,0.35h1.38l-1.23,-1.23c-0.03,-0.03 -0.04,-0.06 -0.04,-0.11l0.02,-0.07l0.54,-0.97h1.13l-5.36,-5.36h1.19l5.36,5.36h1.32l-5.36,-5.36l-0.56,-1.19l6.55,6.55h0.17c0.45,0 0.84,-0.24 1.04,-0.61l2.13,-3.87c0.05,-0.08 0.07,-0.18 0.07,-0.29c0,-0.16 -0.07,-0.31 -0.17,-0.42l5.8,5.8c-0.03,1.64 -0.12,3.27 -0.27,4.9c-0.23,2.44 -2.16,4.37 -4.6,4.6c-1.52,0.14 -3.04,0.23 -4.56,0.27z" mask="url(#mask-DxjPUE3g)"/>
+		</g>
+		<path d="M6.39,5.04l0.56,1.19h8.81c0.33,0 0.6,0.27 0.6,0.6c0,0.1 -0.02,0.2 -0.07,0.29l-2.13,3.87c-0.2,0.37 -0.6,0.61 -1.04,0.61h-4.44l-0.54,0.97l-0.02,0.07c0,0.08 0.07,0.15 0.15,0.15h6.9v1.19h-7.15c-0.66,0 -1.19,-0.54 -1.19,-1.19c0,-0.21 0.05,-0.41 0.15,-0.57l0.8,-1.46l-2.15,-4.52h-1.19v-1.19zM9.21,15.77c0,0.66 -0.54,1.19 -1.19,1.19c-0.66,0 -1.19,-0.54 -1.19,-1.19c0,-0.66 0.53,-1.19 1.19,-1.19c0.66,0 1.19,0.54 1.19,1.19zM15.17,15.77c0,0.66 -0.54,1.19 -1.19,1.19c-0.66,0 -1.19,-0.54 -1.19,-1.19c0,-0.66 0.53,-1.19 1.19,-1.19c0.66,0 1.19,0.54 1.19,1.19z" fill="#ffffff"/>
+	</g>
 </svg>

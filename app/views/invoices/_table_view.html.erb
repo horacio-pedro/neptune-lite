@@ -12,10 +12,10 @@
               </div>
             </div>
           </th>
-          <th class="align_left header"><%= sortable('invoice_number', 'Inv #') %> / <%= sortable('first_name', '  Client') %>
+          <th class="align_left header"><%= sortable('invoice_number', 'Fat #') %> / <%= sortable('first_name', '  Cliente') %>
           </th>
-          <th width="17%" class="align_left header"><%= sortable('invoice_date', t('Invoice Date')) %></th>
-          <th width="16%" class="align_right header"><%= sortable('invoice_total', t('Amount')) %></th>
+          <th width="17%" class="align_left header"><%= sortable('invoice_date', t('Data da Fatura')) %></th>
+          <th width="16%" class="align_right header"><%= sortable('invoice_total', t('Quantia')) %></th>
           <th width="20%" class="align_center header"><%= sortable('status', t('views.common.status')) %></th>
           <!--          <th width="10%" class="center-align not-sortable "><%#= t '.actions', default: t('helpers.actions') %></th>-->
         </tr>
@@ -37,7 +37,7 @@
             <td>
               <em class="inv-number" title="Invoice Number"><%= invoice.formatted_invoice_number %></em>: <%= link_to((client.organization_name rescue 'n/a'),  invoice, remote: true, class: 'invoice_show_link invoice-client') %>
               <% if invoice.is_recurring_invoice? %>
-                <div class="recurring-tag">RECURRING</div>
+                <div class="recurring-tag">RECORRENTE</div>
               <% end %>
               <br>
               <%= client.full_name rescue 'n/a' %>

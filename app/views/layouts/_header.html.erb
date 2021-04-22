@@ -4,7 +4,7 @@
     <!--- header logo--->
     <div class="col s4 m5 l4">
       <a class="btn-menu" href="javascript:;"><i class="material-icons intro dashboard-index-false-intro header-intro" data-intro='By clicking on this button you can toggle the side nav'>menu</i></a>
-      <%= link_to raw('Open<span>Source</span>Billing'), dashboard_path, class: 'logo'%>
+      <%= link_to image_tag("logo.png", :size => "150x40", :style=> 'margin-top: -13px; margin-bottom: -10px;'), dashboard_path, class: 'logo'%>
     </div>
     <!--- header company name--->
     <div class="col s4 m4 l4">
@@ -62,6 +62,9 @@
         <a class="dropdown-button" href="javascript:void(0)" data-activates="dropdown" id="notification-btn" data-beloworigin="true" style="padding-right: 0px; margin-right: 28px"><i class="material-icons intro dashboard-index-false-intro header-intro" data-intro='You can see all of your notifications here'>notifications_none</i></a>
         <%= link_to raw('<i class="material-icons">help_outline</i>'), help_index_path, class: 'help-search',
                     title: t('views.help.help'), remote: true %>
+        <%= active_link_to destroy_user_session_path, method: :delete, class: 'help-search' do %>
+          <i class="material-icons">power_settings_new</i>
+        <% end %>
       </div>
       <!--- header search holder--->
       <div class="search-holder search-wrap">
