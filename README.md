@@ -29,10 +29,6 @@ Features
 
 Try [Demo](http://demo.neptune.ao) here
 
-Caveats
--------
-This is `2.0` release. You may contribute by having any suggestion or reporting the bugs you find.
-
 ## Installation step
 ### Step-1. Dependencies
 #####  1.1 MySQL
@@ -174,8 +170,8 @@ Login credentials
 
 Once you successfully configured Neptune-lite, you can use the below credentials to login.
 
-    Email: admin@opensourcebilling.org
-    password: opensourcebilling
+    Email: admin@neptune.ao
+    password: neptune2018
    
 You can immediately change the credentials once you successfully logged in.    
 
