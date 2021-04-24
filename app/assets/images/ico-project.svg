@@ -1,0 +1,27 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0,0,22,22">
+	<desc>extension icon - Licensed under Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) - Created with Iconfu.com - Derivative work of Material icons (Copyright Google Inc.)</desc>
+	<defs>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-3BPk0You">
+			<stop offset="0" stop-color="#160076"/>
+			<stop offset="1" stop-color="#00001d"/>
+		</linearGradient>
+		<linearGradient x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse" id="color-J6yDMdaD">
+			<stop offset="0" stop-color="#6f43cf"/>
+			<stop offset="1" stop-color="#3c109c"/>
+		</linearGradient>
+		<linearGradient x1="6.77" y1="8.86" x2="32.42" y2="34.51" id="color-SzFORa0w" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="0.48" stop-color="#000000"/>
+		</linearGradient>
+		<mask id="mask-DSatfxnb">
+			<rect fill="url(#color-SzFORa0w)" x="5.05" y="5.18" width="16.86" height="16.82"/>
+		</mask>
+	</defs>
+	<g fill="none" fill-rule="nonzero" style="mix-blend-mode: normal">
+		<path d="M17.11,21.71c-4.07,0.38 -8.16,0.38 -12.22,0c-2.44,-0.23 -4.37,-2.16 -4.6,-4.6c-0.38,-4.07 -0.38,-8.16 0,-12.22c0.23,-2.44 2.16,-4.37 4.6,-4.6c4.07,-0.38 8.16,-0.38 12.22,0c2.44,0.23 4.37,2.16 4.6,4.6c0.38,4.07 0.38,8.16 0,12.22c-0.23,2.44 -2.16,4.37 -4.6,4.6z" fill="url(#color-J6yDMdaD)"/>
+		<g fill="url(#color-3BPk0You)">
+			<path d="M5.05,10.58h0.89c0.44,0 0.85,0.18 1.14,0.47l6.2,6.2h0.7c0.66,0 1.19,-0.54 1.19,-1.19v-2.38h0.89c0.56,0 1.06,-0.31 1.31,-0.78l-5.78,-5.78v-0.89c0,-0.41 -0.17,-0.78 -0.44,-1.05l4.01,4.01v-0.87c0,-0.33 -0.13,-0.63 -0.35,-0.84l7.08,7.08c-0.05,0.85 -0.11,1.7 -0.19,2.55c-0.23,2.44 -2.16,4.37 -4.6,4.6c-2.2,0.21 -4.42,0.3 -6.63,0.28l-5.09,-5.09c0.22,0.22 0.51,0.35 0.84,0.35h2.26v-0.89c0,-0.63 0.36,-1.18 0.89,-1.44z" mask="url(#mask-DSatfxnb)"/>
+		</g>
+		<path d="M17.55,12.19c0,0.82 -0.67,1.49 -1.49,1.49h-0.89v2.38c0,0.66 -0.54,1.19 -1.19,1.19h-2.26v-0.89c0,-0.89 -0.72,-1.61 -1.61,-1.61c-0.89,0 -1.61,0.72 -1.61,1.61v0.89h-2.26c-0.66,0 -1.19,-0.54 -1.19,-1.19v-2.26h0.89c0.89,0 1.61,-0.72 1.61,-1.61c0,-0.89 -0.72,-1.61 -1.61,-1.61h-0.89v-2.26c0,-0.66 0.53,-1.19 1.19,-1.19h2.38v-0.89c0,-0.82 0.67,-1.49 1.49,-1.49c0.82,0 1.49,0.67 1.49,1.49v0.89h2.38c0.66,0 1.19,0.54 1.19,1.19v2.38h0.89c0.82,0 1.49,0.67 1.49,1.49z" fill="#ffffff"/>
+	</g>
+</svg>

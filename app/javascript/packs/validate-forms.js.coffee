@@ -144,10 +144,10 @@ class window.validateForms
 
   getMessage: (type) ->
     switch type
-      when "required" then "This field is required"
-      when "confirm" then "Password and confirm password do not match"
-      when "password_length" then "Password should be 8 characters long"
-      when "required_email" then "Email is required"
-      when "invalid_email" then "Email you have entered is invalid"
+      when "required" then "Este campo é obrigatório"
+      when "confirm" then "As palavra-passe não coincidem"
+      when "password_length" then "Palavra-passe deve ter 8 caracteres"
+      when "required_email" then "E-mail é obrigatório"
+      when "invalid_email" then "O e-mail que você digitou é inválido"
       else
-        "This field is required"
+        "Este campo é obrigatório"

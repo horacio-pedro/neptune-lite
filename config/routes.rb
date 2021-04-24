@@ -12,7 +12,7 @@ Osb::Application.routes.draw do
 
   mount Sidekiq::Web => '/sidekiq'
 
-  #namespace :OpenSourceBilling do
+  #namespace :Neptune do
   #  resources :people
   #end
   #get '/auth/:provider/callback', to: 'sessions#create'

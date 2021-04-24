@@ -12,23 +12,23 @@
         <div class="info-left-section new-invoice-section">
 
 
-          <span class="label-font intro invoices-new-false-intro" data-intro = 'Here you can select the client for which you are creating invoice' data-step= '5'><%= t('views.clients.client') %> </span>
+          <span class="label-font intro invoices-new-false-intro" data-intro = 'Aqui você pode selecionar o cliente para o qual está criando a fatura' data-step= '5'><%= t('views.clients.client') %> </span>
           <% selected_client = @client.present? ? @client.id : f.object.client_id %>
           <%= f.select :client_id, ("<option value='-1'>#{t('views.common.add_new')}</option>".html_safe+options_for_select((load_clients(action_name, invoice.company_id)),
                                                                                                                             selected: selected_client)),
                        {prompt: t('views.invoices.select_client'), include_blank: false}, data: {action_path: new_client_path}, class: 'add_link_select invoice-client-select form_select_2' %>
 
           <div class="terms hidden">
-            <span class="label-font intro invoices-new-false-intro" data-intro = 'Here you can select the payment terms' data-step= '6'><%= t('views.invoices.terms') %>: </span>
+            <span class="label-font intro invoices-new-false-intro" data-intro = 'Aqui você pode selecionar as condições de pagamento' data-step= '6'><%= t('views.invoices.terms') %>: </span>
             <%= f.select :payment_terms_id, options_for_select(PaymentTerm.all.map { |p| [p.description, p.id, {'number_of_days' => p.number_of_days}] }, :selected => selected_payment_term(f.object)), {:prompt => "", :include_blank => ""}, {"data-placeholder" => "Select a payment term...", :class => "payment_terms payment-term-dropdown invoice-client-select select_2", "data-form-container" => "payment_terms_holder", "data-dropdown-width" => "300"} %>
           </div>
 
           <div class="invoice-date-div">
-            <%= f.input :invoice_date, wrapper_tag: :span, label_html: { class: 'intro invoices-new-false-intro', :'data-intro' => 'Here you can select the invoice date for your invoice', :'data-step' => '7' },
+            <%= f.input :invoice_date, wrapper_tag: :span, label_html: { class: 'intro invoices-new-false-intro', :'data-intro' => 'Aqui você pode selecionar a data da sua fatura', :'data-step' => '7' },
                         input_html: { class: 'date-field-style1 date_picker', value: f.object.invoice_date, id: 'invoice_date_picker' }, as: :string %>
           </div>
           <div class="due-date-div">
-            <%= f.input :due_date, wrapper_tag: :span, label_html: { class: 'intro invoices-new-false-intro', :'data-intro' => 'Here you can select the due date for your invoice', :'data-step' => '8' },
+            <%= f.input :due_date, wrapper_tag: :span, label_html: { class: 'intro invoices-new-false-intro', :'data-intro' => 'Aqui você pode selecionar a data de vencimento da sua fatura', :'data-step' => '8' },
                         input_html: { class: 'date-field-style1 date_picker', id: 'invoice_due_date_picker', value: default_due_date(current_company, f.object) }, as: :string %>
           </div>
           <div class="clearfix"></div>
@@ -61,7 +61,7 @@
 
           <% has_recurring = invoice.new_record? ? true : !invoice.recurring_schedule.new_record? %>
           <%= check_box_tag 'recurring', true, has_recurring, class: 'filled-in' %>
-          <label for="recurring" class=" intro invoices-new-false-intro" data-intro = 'Here you can set the recurring procedure for your invoice' data-step= '9'><h6><%= t('views.common.recurring') %></h6></label>
+          <label for="recurring" class=" intro invoices-new-false-intro" data-intro = 'Aqui você pode definir o procedimento recorrente para sua fatura' data-step= '9'><h6><%= t('views.common.recurring') %></h6></label>
           <div class="" id="recurring_schedule_container">
             <%=  f.simple_fields_for :recurring_schedule do |rs| %>
               <div class="">
@@ -70,7 +70,7 @@
                   <!--                  <span class="next-invoice-date"><%#= t('views.invoices.next_issue_date') %>:</span>-->
                   <span>
                       <small>
-            <%= rs.input :next_invoice_date, label: 'Next Issue Date', wrapper_tag: :span, label_html: { class: 'intro invoices-new-false-intro', :'data-intro' => 'Here you can select the invoice date for your invoice', :'data-step' => '7' },
+            <%= rs.input :next_invoice_date, label: 'Next Issue Date', wrapper_tag: :span, label_html: { class: 'intro invoices-new-false-intro', :'data-intro' => 'Aqui você pode selecionar a data da sua fatura', :'data-step' => '7' },
                          input_html: { class: 'date-field-style1 date_picker',value: next_invoice_date, id: 'next_issue_date', next_date: next_invoice_date }, as: :string %>
 
                         <%#= rs.input :next_invoice_date, label: false, input_html: { class: 'date-field-style date_picker', value: next_invoice_date, id: 'next_issue_date', next_date: next_invoice_date },

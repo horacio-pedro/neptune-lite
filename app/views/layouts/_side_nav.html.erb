@@ -31,8 +31,8 @@
         <li>
           <%= active_link_to projects_path, title: t('header.links.time_tracking.time_tracking'),
                              class: "#{'active' if ['projects', 'tasks', 'staffs', 'logs'].include?(controller_name)}" do %>
-            <%= image_tag('ico-time.svg', alt: t('header.links.time_tracking.time_tracking'))%>
-            <span><%= t('header.links.time_tracking.time_tracking') %></span>
+            <%= image_tag('ico-project.svg', alt: t('header.links.time_tracking.time_tracking'))%>
+            <span><%= t('header.links.time_tracking.project') %></span>
           <% end %>
         </li>
       <% end %>

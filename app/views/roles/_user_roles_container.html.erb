@@ -16,7 +16,7 @@
                 <% if current_user.role.id != role.id %>
                   <%= link_to raw("<i class='material-icons'>delete</i>"), role, method: :delete,
                               data:{confirm: t('helpers.messages.confirm'),
-                                    success: 'Role has been deleted.'} %>
+                                    success: 'A função foi excluida.'} %>
                 <% end %>
                 <%= link_to raw("<i class='material-icons'>create</i>"), edit_role_url(role), remote: true %>
               </div>
@@ -29,5 +29,5 @@
   </div>
 <% end %>
 <div style="" class="right">
-  <%= link_to ' + New Role ', new_role_path, remote: true, class: "#{(@roles.count > 0 && @roles.count <= 9) || @roles.count == 0 ? "secondary_new_link" : 'primary_new_link'}"  %>
+  <%= link_to ' + Nova Função ', new_role_path, remote: true, class: "#{(@roles.count > 0 && @roles.count <= 9) || @roles.count == 0 ? "secondary_new_link" : 'primary_new_link'}"  %>
 </div>

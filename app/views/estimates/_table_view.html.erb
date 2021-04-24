@@ -12,9 +12,9 @@
               </div>
             </div>
           </th>
-          <th class="align_left header <%= sortable_class('clients.organization_name') %>"><%= sortable('created_at', t('client / Est #')) %></th>
+          <th class="align_left header <%= sortable_class('clients.organization_name') %>"><%= sortable('created_at', t('cliente / Orç #')) %></th>
           <th width="15%" class="align_left header <%= sortable_class('estimate_date') %>"><%= sortable('estimate_date', t('views.estimates.estimate_date')) %></th>
-          <th width="16%" class="align_left header sorting {sorter:'thousands'} <%= sortable_class('estimate_total') %>"><%= sortable('estimate_total', t('Amount')) %></th>
+          <th width="16%" class="align_left header sorting {sorter:'thousands'} <%= sortable_class('estimate_total') %>"><%= sortable('estimate_total', t('Quantia')) %></th>
           <th width="20%" class="align_center header <%= sortable_class('status') %>"><%= sortable('status', t('views.common.status')) %></th>
         </tr>
         </thead>
@@ -73,16 +73,16 @@
                     </li>
 
                     <li>
-                      <%= link_to raw("<i class='material-icons'>send</i>Send"), send_estimate_estimates_path(id: estimate.id),
+                      <%= link_to raw("<i class='material-icons'>send</i>Enviar"), send_estimate_estimates_path(id: estimate.id),
                                   title: t('views.common.send'), remote: true %>
                     </li>
 
                     <li>
-                      <%= link_to raw("<i class='material-icons'>visibility</i>Show"), estimate, title: t('views.common.show'), target: '_blank' %>
+                      <%= link_to raw("<i class='material-icons'>visibility</i>Ver"), estimate, title: t('views.common.show'), target: '_blank' %>
                     </li>
 
                     <li>
-                      <%= link_to raw("<i class='material-icons'>delete</i>Delete"),estimate, method: :delete,
+                      <%= link_to raw("<i class='material-icons'>delete</i>Excluir"),estimate, method: :delete,
                                   data:{confirm: t('helpers.messages.confirm'),
                                         success: t('views.estimates.estimate_deleted_msg')},
                                   title: t('helpers.links.delete') %>

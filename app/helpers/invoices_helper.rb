@@ -3,13 +3,13 @@ module InvoicesHelper
   def invoices_due_dates invoice
     return '' if invoice.draft? || invoice.status.eql?('void')
     if invoice.due_date.present? && invoice.due_date.to_time > Date.today && invoice.status != "paid"
-      "<span class = 'idd invoice-due' title='Due Date: #{invoice.due_date}'>due in #{distance_of_time_in_words(invoice.due_date.to_time - Time.now)}</span>".html_safe
+      "<span class = 'idd invoice-due' title='Due Date: #{invoice.due_date}'>expira em #{distance_of_time_in_words(invoice.due_date.to_time - Time.now)}</span>".html_safe
     elsif invoice.due_date.present? && invoice.due_date.to_time == Date.today.to_time && invoice.status != 'paid'
-      "<span class = 'idd invoice-due' title='Due Date: #{invoice.due_date}'> due today </span>".html_safe
+      "<span class = 'idd invoice-due' title='Due Date: #{invoice.due_date}'> expira hoje </span>".html_safe
     elsif invoice.due_date.present? && invoice.due_date.to_time < Date.today && invoice.status != "paid"
       "<span class = 'idd invoice-over-due' title='Due Date: #{invoice.due_date}'>#{distance_of_time_in_words(Time.now - invoice.due_date.to_time)} overdue</span>".html_safe
     elsif invoice.due_date.present? && invoice.status == "paid"
-      "<span class = 'idd invoice-paid'> paid on #{invoice.payments.received.last.payment_date}</span>".html_safe rescue ''
+      "<span class = 'idd invoice-paid'> pago em #{invoice.payments.received.last.payment_date}</span>".html_safe rescue ''
     end
   end
 

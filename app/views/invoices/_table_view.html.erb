@@ -42,7 +42,7 @@
               <br>
               <%= client.full_name rescue 'n/a' %>
             </td>
-            <td><em title="Invoice Date"><%= invoice.invoice_date.present? ? invoice.invoice_date : invoice.created_at.strftime("%Y-%m-%d") %></em><br>
+            <td><em title="Invoice Date"><%= invoice.invoice_date.present? ? invoice.invoice_date : invoice.created_at.strftime("%d-%m-%Y") %></em><br>
               <%= invoices_due_dates(invoice) %>
             </td>
             <td class='invoice-total'>
@@ -97,23 +97,23 @@
                                   stop_recurring_invoice_path(invoice) if invoice.is_recurring_invoice? %>
                     </li>
                     <li>
-                      <%= link_to raw("<i class='material-icons'>send</i>Send"), send_invoice_invoices_path(id: invoice.id), title: t('views.common.send'), remote: true %>
+                      <%= link_to raw("<i class='material-icons'>send</i>Enviar"), send_invoice_invoices_path(id: invoice.id), title: t('views.common.send'), remote: true %>
                     </li>
                     <li>
-                      <%= link_to raw("<i class='material-icons'>visibility</i>Show"), invoice, title: t('views.common.show'), target: '_blank' %>
+                      <%= link_to raw("<i class='material-icons'>visibility</i>Mostar"), invoice, title: t('views.common.show'), target: '_blank' %>
                     </li>
                     <li>
                       <%= link_to raw("<i class='material-icons'>file_copy</i>Clone"), clone_invoice_path(invoice), title: t('views.dashboard.clone') %>
                     </li>
                     <li>
-                      <%= link_to raw("<i class='material-icons'>open_in_browser</i>Get url"), 'javascript:;', class: 'get_clipboard_url', data: {url: request.protocol + request.host_with_port + url_for(invoice)} %>
+                      <%= link_to raw("<i class='material-icons'>open_in_browser</i>Obter url"), 'javascript:;', class: 'get_clipboard_url', data: {url: request.protocol + request.host_with_port + url_for(invoice)} %>
                     </li>
                     <li class="<%= 'disable_payment' if invoice.total_received == 0 %>">
-                      <%= link_to raw("<i class='material-icons'>receipt</i> Receipt"), invoice.total_received == 0 ? 'javascript:void(0);' : {controller: 'invoices', action: 'invoice_receipt', id: invoice.id, format: 'pdf'}, target: '_blank', title: 'Print' %>
+                      <%= link_to raw("<i class='material-icons'>receipt</i> Recibo"), invoice.total_received == 0 ? 'javascript:void(0);' : {controller: 'invoices', action: 'invoice_receipt', id: invoice.id, format: 'pdf'}, target: '_blank', title: 'Print' %>
                     </li>
                     <li class="<%= 'disable_payment' if invoice.status.eql?('void') %>">
-                      <%= link_to raw("<i class='material-icons'>cancel</i> Void"), invoice.status.eql?('void') ? 'javascript:void(0);' : {controller: 'invoices', action: 'void_invoice', id: invoice.id},
-                                  title: 'Void',data: { confirm: 'Are you sure?', text: "This invoice will be cancelled"}, remote: true %>
+                      <%= link_to raw("<i class='material-icons'>cancel</i> Cancelar"), invoice.status.eql?('void') ? 'javascript:void(0);' : {controller: 'invoices', action: 'void_invoice', id: invoice.id},
+                                  title: 'Cancelar',data: { confirm: 'Tem a certeza?', text: "Esta fatura será cancelada"}, remote: true %>
                     </li>
                   </ul>
                 <% end %>
